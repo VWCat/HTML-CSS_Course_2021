@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(15, 104, 170, 0.8);
+    margin: 0;
+}
+h1 {
+    color: saddlebrown;
+    font-size: 2em;
+    text-align: center;
+    border: 5px dashed saddlebrown;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.orange {
+    background-color: tan;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(153, 82, 1, 0.7);
+}
+.double-line {
+    line-height: 2;
+}
+ul {
+    list-style-type: square;
+}
+img {
+    width: 30%;
+}
+/* стили блоков */
+.green {
+    background-color: lightgreen;
+}
+.green img {
+    width: 33%;
+}
+.blue {
+    background-color: skyblue;
+}
+.pink {
+    background-color: pink;
+}
+.block {
+    width: 33%;
+    border-radius: 20px;
+    padding: 5px;
+    
+    box-sizing: border-box;
+}
