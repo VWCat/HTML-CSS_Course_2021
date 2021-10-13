@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <title>Рубльбанк</title>
   </head>
   <body>
     <!-- хэдер -->
@@ -29,8 +30,12 @@
                 <li><a href="#">Самозянятым</a></li>
               </ul>
               <ul class="top-menu-right">
-                <li><a href="">Отделения и банкоматы</a></li>
-                <li><a href="">Рубльбанк онлайн</a></li>
+                <li>
+                  <a href="#" class="hyperlink__underline"
+                    >Отделения и банкоматы</a
+                  >
+                </li>
+                <li><a href="#">Рубльбанк онлайн</a></li>
               </ul>
             </nav>
           </div>
@@ -59,9 +64,17 @@
       <div class="container">
         <div class="banner-info">
           <div class="banner-info-offer">
-            <h1>Кредит<br />на любые цели</h1>
-            <a href="#" class="btn btn-primary">Получить кредит</a>
-            <a href="#" class="btn btn-secondary">Подробнее</a>
+            <div class="offer-header">
+              <h1>
+                Кредит<br />
+                <span class="offer-header__blue">на любые</span>
+                цели
+              </h1>
+            </div>
+            <div class="offer-btn">
+              <a href="#" class="btn btn-primary">Получить кредит</a>
+              <a href="#" class="btn btn-secondary">Подробнее</a>
+            </div>
           </div>
           <div class="banner-info-logo">
             <img src="./img/banner.png" alt="Фото задумчивого мужика" />
@@ -69,5 +82,138 @@
         </div>
       </div>
     </div>
+    <!-- лучшие предложения в Рубльбанке -->
+    <div class="best-offers">
+      <div class="container">
+        <div class="best-offers__content">
+          <div class="best-offers__header">
+            <h1>Лучшие предложения в Рубльбанке</h1>
+            <h2>Банковские продукты для комфортной жизни</h2>
+          </div>
+          <div class="best-offers__offers-container">
+            <a href="#" class="best-offers__offer">
+              <span class="best-offers__offer-label">
+                <h1>Ипотечное кредитование</h1>
+                <h2>Программы господдержки Выгодные условия</h2>
+              </span>
+              <img class="best-offers__offer-image" src="./img/ipoteka.png" />
+            </a>
+            <a href="#" class="best-offers__offer">
+              <span class="best-offers__offer-label">
+                <h1>Накопительные счета</h1>
+                <h2>Ставки от 7,5% <br />Снятие в любое время</h2>
+              </span>
+              <img class="best-offers__offer-image" src="./img/cash.png" />
+            </a>
+            <a href="#" class="best-offers__offer">
+              <span class="best-offers__offer-label">
+                <h1>Персональные карты</h1>
+                <h2>
+                  Карта с эксклюзивным дизайном <br />для постоянных клиентов
+                </h2>
+              </span>
+              <img class="best-offers__offer-image" src="./img/card.png" />
+            </a>
+            <a href="#" class="best-offers__offer">
+              <span class="best-offers__offer-label">
+                <h1>Партнерские программы</h1>
+                <h2>Выгодные условия <br />для путешествий <br />и покупок</h2>
+              </span>
+              <img class="best-offers__offer-image" src="./img/partner.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- кредитная карта -->
+    <div class="credit-card">
+      <div class="container">
+        <div class="credit-card__content">
+          <div class="credit-card__main-card">
+            <div class="credit-card__main-header">
+              <h1>Кредитная карта <br />60 дней <br />без процентов</h1>
+              <img src="./img/card-60.png" alt="" />
+            </div>
+            <div class="credit-card__main-param">
+              <div class="credit-card__param">
+                <h1>500 000 ₽</h1>
+                <h2>лимит<br />по карте</h2>
+              </div>
+              <div class="credit-card__param">
+                <h1>от 12%</h1>
+                <h2>ставка<br />по карте</h2>
+              </div>
+              <div class="credit-card__param">
+                <h1>1 день</h1>
+                <h2>решение<br />по заявке</h2>
+              </div>
+            </div>
+            <div class="credit-card__main-btn">
+              <a href="#" class="btn btn-primary">Оформить карту</a>
+              <a href="#" class="btn btn-secondary">Подробнее</a>
+            </div>
+          </div>
+          <div class="credit-card__other-cards">
+            <a href="#" class="credit-card__other-card">
+              <h1>Кредитные карты</h1>
+              <img src="./img/arrow-blue.png" alt="Синяя стрелка вправо" />
+            </a>
+            <a href="#" class="credit-card__other-card">
+              <h1>Дебетовые карты</h1>
+              <img src="./img/arrow-blue.png" alt="Синяя стрелка вправо" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Раздел: как получить карту -->
+    <div class="get-card">
+      <div class="container">
+        <div class="get-card__content">
+          <h1>Как получить карту</h1>
+          <div class="get-card__steps">
+            <div class="get-card_step">
+              <img src="./img/ico-stay-zayav.png" alt="" />
+              <h1>Оставить заявку</h1>
+            </div>
+            <img src="./img/arrow-gray.png" alt="Серая стрелка вправо" />
+            <div class="get-card_step">
+              <img src="./img/ico-get-approve.png" alt="" />
+              <h1>Получить одобрение</h1>
+            </div>
+            <img src="./img/arrow-gray.png" alt="Серая стрелка вправо" />
+            <div class="get-card_step">
+              <img src="./img/ico-take-card.png" alt="" />
+              <h1>Забрать карту</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Футер -->
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__column">
+            <h1>© 2001-2020 Рубльбанк</h1>
+            <h2>
+              Генеральная лицензия на осуществление банковских операций от 11
+              августа 2015 года. Регистрационный номер - 1234.
+            </h2>
+          </div>
+          <div class="footer__column">
+            <a class="hyperlink__underline" href="">Обратная связь</a>
+            <h2>Россия,<br />Москва, 113337, ул. Советская, д. 42</h2>
+          </div>
+          <div class="footer__column">
+            <h2>
+              Информация о процентных ставках по<br />договорам банковского
+              вклада с физическими<br />лицами
+            </h2>
+            <h2>Информация, обязательная к размещению</h2>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

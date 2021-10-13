@@ -2,6 +2,8 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 ul {
   margin: 0;
@@ -12,10 +14,33 @@ ul {
   width: 1140px;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
+.hyperlink__underline {
+  text-decoration: underline;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border-radius: 3px;
+}
+.btn-primary {
+  background-color: #3a95ff;
+  color: #fff;
+}
+.btn-secondary {
+  border: 1px solid #3a95ff;
+  color: #3a95ff;
+}
 /* Стили хэдера */
 .header-top,
 .header-bottom {
   border-bottom: 1px solid #dedede;
+  min-width: 1140px;
 }
 .header-top-info {
   display: flex;
@@ -29,9 +54,7 @@ ul {
 .top-menu {
   display: flex;
   width: 100%;
-  /* width: 945px; */
   justify-content: space-between;
-  /* align-items: center; */
 }
 .top-menu-left,
 .top-menu-right {
@@ -40,7 +63,6 @@ ul {
 }
 .top-menu-left a,
 .top-menu-right a {
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 110%;
@@ -59,7 +81,6 @@ ul {
   align-items: center;
 }
 .main-menu-list a {
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
@@ -68,8 +89,255 @@ ul {
 /* стили баннера */
 .main-banner {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  min-width: 1140px;
 }
 .banner-info {
   display: flex;
   justify-content: space-between;
+  height: 400px;
+}
+.banner-info-offer {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  align-items: center;
+}
+.offer-header {
+  display: flex;
+  margin: 85px 0 65px 0;
+}
+.offer-header h1 {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 110%;
+  color: #212121;
+  margin: 0;
+}
+.offer-header__blue {
+  color: #3a95ff;
+}
+.offer-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.banner-info-logo {
+  display: flex;
+}
+/* стили раздела лучшие предложения */
+.best-offers {
+  min-width: 1140px;
+}
+.best-offers__content {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+}
+.best-offers__header {
+  margin: 70px 0;
+}
+.best-offers__header h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #000;
+  margin: 0;
+}
+.best-offers__header h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin: 25px 0 0 0;
+}
+.best-offers__offers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.best-offers__offer {
+  width: 555px;
+  height: 300px;
+  margin: 0 0 62px 0;
+  background: #eff2f5;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+}
+.best-offers__offer-label {
+  margin: 34px 0 0 34px;
+}
+.best-offers__offer-label h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #212121;
+  margin: 0 0 24px 0;
+}
+.best-offers__offer-label h2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #424242;
+  margin: 0;
+}
+.best-offers__offer-image {
+  border-radius: 8px;
+}
+/* стили раздела кредитная карта */
+.credit-card {
+  min-width: 1140px;
+  height: 770px;
+  background: #eff2f5;
+}
+.credit-card__content {
+  display: flex;
+  height: 500px;
+  margin: 135px 0;
+  justify-content: space-between;
+}
+.credit-card__main-card {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  background: #e0e5ea;
+  box-shadow: -5px -5px 25px rgba(255, 255, 255, 0.25),
+    5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.credit-card__main-header {
+  display: flex;
+  justify-content: space-between;
+}
+.credit-card__main-header h1 {
+  font-weight: 600;
+  font-size: 38px;
+  color: #212121;
+  margin: 34px 0 0 100px;
+}
+.credit-card__main-param {
+  display: flex;
+  margin: 0 100px 0 100px;
+  justify-content: space-between;
+}
+.credit-card__param {
+  width: 160px;
+}
+.credit-card__param h1 {
+  font-weight: 500;
+  font-size: 30px;
+  color: #212121;
+  margin: 0;
+  padding-bottom: 14px;
+  text-align: center;
+  border-bottom: 1px solid #3a95ff;
+}
+.credit-card__param h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #212121;
+  margin: 6px 0 0 0;
+  text-align: center;
+}
+.credit-card__main-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin: 40px 0 0 100px;
+}
+.credit-card__other-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 360px;
+}
+.credit-card__other-card {
+  background: #f7f7f7;
+  box-shadow: -5px -5px 25px rgba(255, 255, 255, 0.25),
+    5px 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 360px;
+  height: 235px;
+  margin: 0;
+  display: flex;
+  padding: 34px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-bottom: 5px solid #3a95ff;
+}
+.credit-card__other-card h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #212121;
+  margin: 0;
+  text-align: left;
+  align-self: start;
+}
+.credit-card__other-card img {
+  align-self: flex-end;
+}
+/* стили раздела как получить карту */
+.get-card {
+  min-width: 1140px;
+  height: 460px;
+}
+.get-card__content {
+  height: 280px;
+  margin: 70px 0 110px 0;
+}
+.get-card__content h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #000;
+  margin: 0 0 70px 0;
+  text-align: left;
+  align-self: start;
+}
+.get-card__steps {
+  display: flex;
+  justify-content: space-evenly;
+}
+.get-card__steps img {
+  align-self: center;
+}
+.get-card_step {
+  width: 120px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-card_step h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #212121;
+  margin: 23px 0;
+  text-align: center;
+}
+/* Стили футера */
+footer {
+  min-width: 1140px;
+  height: 160px;
+  background: #eff2f5;
+}
+.footer__content {
+  display: flex;
+  margin: 37px 0 0 0;
+  justify-content: space-between;
+}
+.footer__column {
+  width: 360px;
+}
+.footer__column h1,
+.footer__column a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242;
+  margin: 0 0 22px 0;
+}
+.footer__column a {
+  display: block;
+}
+.footer__column h2 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #424242;
+  margin: 0 0 22px 0;
 }
