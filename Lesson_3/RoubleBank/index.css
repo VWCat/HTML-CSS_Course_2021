@@ -42,6 +42,9 @@ a {
 .blue-text {
   color: #3a95ff !important;
 }
+.bold-text {
+  font-weight: 600 !important;
+}
 /* Стили хэдера */
 .header-top,
 .header-bottom {

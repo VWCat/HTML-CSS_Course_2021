@@ -1,0 +1,171 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.hyperlink__underline {
+  text-decoration: underline;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 200px;
+  height: 55px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-primary {
+  background-color: #3a95ff;
+  color: #fff;
+}
+.btn-secondary {
+  border: 1px solid #3a95ff;
+  color: #3a95ff;
+}
+.blue-text {
+  color: #3a95ff !important;
+}
+.bold-text {
+  font-weight: 600 !important;
+}
+/* Стили хэдера */
+.header-top,
+.header-bottom {
+  border-bottom: 1px solid #dedede;
+  min-width: 1140px;
+}
+.header-top-info {
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+  align-items: center;
+}
+.logo {
+  margin-right: 37px;
+}
+.top-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.top-menu-left,
+.top-menu-right {
+  display: flex;
+  justify-content: space-between;
+}
+.top-menu-left a,
+.top-menu-right a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  color: #424242;
+}
+.top-menu-left {
+  width: 352px;
+}
+.top-menu-right {
+  width: 340px;
+}
+.main-menu-list {
+  display: flex;
+  justify-content: space-between;
+  height: 73px;
+  align-items: center;
+}
+.main-menu-list a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  color: #424242;
+}
+/* Стили раздела "Дебетовые карты" */
+.content {
+  min-width: 1140px;
+}
+.debet-cards {
+  margin-top: 70px;
+}
+.debet-cards__label {
+  font-weight: 600;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 70px;
+}
+.card {
+  display: flex;
+  height: 400px;
+  background: #eff2f5;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-bottom: 70px;
+}
+.card__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px 115px 50px 30px;
+}
+.card__label {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #212121;
+}
+.card__params {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #424242;
+}
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+/* Стили футера */
+footer {
+  min-width: 1140px;
+  height: 160px;
+  background: #eff2f5;
+}
+.footer__content {
+  display: flex;
+  margin: 37px 0 0 0;
+  justify-content: space-between;
+}
+.footer__column {
+  width: 360px;
+}
+.footer__column h1,
+.footer__column a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242;
+  margin: 0 0 22px 0;
+}
+.footer__column a {
+  display: block;
+}
+.footer__column h2 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #424242;
+  margin: 0 0 22px 0;
+}
