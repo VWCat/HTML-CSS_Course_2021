@@ -24,9 +24,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 200px;
   height: 55px;
   border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
 }
 .btn-primary {
   background-color: #3a95ff;
@@ -35,6 +38,9 @@ a {
 .btn-secondary {
   border: 1px solid #3a95ff;
   color: #3a95ff;
+}
+.blue-text {
+  color: #3a95ff !important;
 }
 /* Стили хэдера */
 .header-top,
@@ -113,9 +119,7 @@ a {
   color: #212121;
   margin: 0;
 }
-.offer-header__blue {
-  color: #3a95ff;
-}
+
 .offer-btn {
   display: flex;
   justify-content: space-between;
