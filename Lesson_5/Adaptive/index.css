@@ -1,0 +1,22 @@
+.orange {
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pink {
+  background-color: pink;
+  padding: 10px;
+  margin: 10px;
+  width: calc(25% - 2 * 10px);
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .pink {
+    width: calc(50% - 2 * 10px);
+  }
+}
+@media (max-width: 575px) {
+  .pink {
+    width: calc(100% - 2 * 10px);
+  }
+}

@@ -1,0 +1,16 @@
+.orange {
+  background-color: orange;
+  height: 800px;
+}
+.pink {
+  background-color: pink;
+  border: 1px solid black;
+}
+.my-bg-orange {
+  background-color: orange;
+}
+.my_text {
+  background-color: lightgray;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
